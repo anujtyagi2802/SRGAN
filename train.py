@@ -139,6 +139,6 @@ def train(epochs, batch_size):
         if e % 300 == 0:
             generator.save('./output/gen_model%d.h5' % e)
 
-train(20000,4)
+train(15000,4)
 
 
