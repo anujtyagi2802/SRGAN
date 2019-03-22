@@ -1,11 +1,3 @@
-#!/usr/bin/env python
-#title           :test.py
-#description     :to test the model
-#author          :Deepak Birla
-#date            :2018/10/30
-#usage           :python test.py --options
-#python_version  :3.5.4 
-
 from keras.models import Model
 import matplotlib.pyplot as plt
 import tensorflow as tf
