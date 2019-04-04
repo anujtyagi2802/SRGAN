@@ -13,6 +13,7 @@ from keras.applications.vgg19 import VGG19
 import keras.backend as K
 from keras.models import Model
 import argparse
+import sewar
 
 image_shape = (96,96,3)
     
@@ -71,6 +72,7 @@ def plot_test_generated_images_for_model(output_dir, generator, x_test_hr, x_tes
         
         plt.subplot(dim[0], dim[1], 2)
         plt.imshow(generated_image[index], interpolation='nearest')
+        plt.title('psnr value %d' % sewar.psnr(image_batch_hr,generated_image,MAX=None))
         plt.axis('off')
     
         plt.subplot(dim[0], dim[1], 3)
